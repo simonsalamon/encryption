@@ -26,11 +26,11 @@ public class test : MonoBehaviour
 
 
 
-        var(ciphertext, nonce, tag) = newEncrypt.EncryptWithBouncyCastle( "سلام داداش ", key);
+        var(ciphertext, nonce, tag) = BouncyCastle.EncryptWithBouncyCastle( "سلام داداش ", key);
         Debug.Log(Encoding.UTF8.GetString(ciphertext));
 
 
-        string encrypedData = newEncrypt.DecryptWithBouncyCastle(ciphertext , nonce , tag , key);
+        string encrypedData = BouncyCastle.DecryptWithBouncyCastle(ciphertext , nonce , tag , key);
 
         Debug.Log(encrypedData);
 

@@ -7,7 +7,7 @@ using System.Text;
 using System.Linq;
 using System.Security.Cryptography;
 
-public class newEncrypt
+public class BouncyCastle
 {
     public static (byte[] ciphertext, byte[] nonce, byte[] tag) EncryptWithBouncyCastle(string plaintext, byte[] key)
     {
